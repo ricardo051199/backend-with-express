@@ -1,6 +1,7 @@
 import { Request, Response } from 'express';
+import User from '../../domain/models/User'
 
-const users: { username: string; password: string }[] = [];
+const users: User[] = [];
 
 // Controlador para la ruta de registro de usuario
 export const registerUser = (req: Request, res: Response): void => {
